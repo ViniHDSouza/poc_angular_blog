@@ -1,3 +1,18 @@
+/*
+ * Componente de Card Pequeno
+ *
+ * Este componente representa um card menor para listagem de artigos:
+ *
+ * Recursos Angular:
+ * - @Component: Define este arquivo como um componente Angular
+ * - @Input(): Propriedades que recebem dados do componente pai:
+ *   * photoCover: Imagem do artigo
+ *   * cardTitle: Título do artigo
+ *   * Id: Identificador único usado para navegação
+ *
+ * Este componente é usado em conjunto com *ngFor no HomeComponent
+ * para criar uma lista de artigos secundários
+ */
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({

@@ -1,3 +1,21 @@
+/*
+ * Componente de Conteúdo do Artigo
+ *
+ * Este componente é responsável por exibir o conteúdo completo de um artigo:
+ *
+ * Recursos Angular utilizados:
+ * - ActivatedRoute: Serviço para acessar parâmetros da rota atual
+ * - Observables: Usado com route.params.subscribe para reagir a mudanças na URL
+ * - Injeção de Dependência: ActivatedRoute injetado via construtor
+ * - Lifecycle Hooks: ngOnInit para inicialização e carregamento dos dados
+ * - Property Binding: Para exibir dados dinâmicos no template
+ *
+ * Fluxo de Dados:
+ * 1. Captura o ID do artigo da URL
+ * 2. Busca os dados do artigo no dataFake
+ * 3. Atualiza as propriedades do componente
+ * 4. Template exibe os dados atualizados
+ */
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { dataFake } from '../../data/dataFake';

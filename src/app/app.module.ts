@@ -1,3 +1,12 @@
+/*
+ * Módulo principal da aplicação Angular
+ *
+ * @NgModule: Decorator que marca uma classe como módulo Angular
+ * - declarations: Lista todos os componentes que pertencem a este módulo
+ * - imports: Outros módulos que este módulo necessita
+ * - providers: Serviços disponíveis para injeção de dependência
+ * - bootstrap: Componente raiz que Angular deve carregar na inicialização
+ */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
